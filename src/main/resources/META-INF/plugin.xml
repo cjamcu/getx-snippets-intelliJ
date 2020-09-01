@@ -1,15 +1,13 @@
 <idea-plugin>
     <id>com.cjamcu.getx-snippets</id>
     <name>GetX Snippets</name>
-    <vendor email="cjamcu@gmail.com" url="http://www.yourcompany.com">cjamcu</vendor>
+    <vendor email="cjamcu@gmail.com" url="https://github.com/cjamcu/getx-snippets-intelliJ">cjamcu</vendor>
 
     <description>An extension to accelerate the process of developing applications with flutter, aimed at everyone using the GetX package.</description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-
-    <depends>com.intellij.java</depends>
-    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>com.intellij.modules.platform</depends>
     <version>1.0.0</version>
 
 
