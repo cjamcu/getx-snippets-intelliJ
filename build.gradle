@@ -35,9 +35,9 @@ compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
 
-//publishPlugin {
-//     token intellijPublishToken
-//}
+publishPlugin {
+     token intellijPublishToken
+}
 
 intellij {
     version '2019.2'
