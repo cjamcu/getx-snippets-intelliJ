@@ -17,9 +17,10 @@ dependencies {
 }
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
-intellij {
-    version '2020.1.3'
-}
+// duplicate declaration
+//intellij {
+//    version '2020.1.3'
+//}
 
 sourceSets {
     main {
@@ -35,11 +36,18 @@ compileTestKotlin {
 }
 
 publishPlugin {
-    token intellijPublishToken
+     token intellijPublishToken
 }
 
 intellij {
+    version '2019.2'
+    plugins 'java'
+    updateSinceUntilBuild = true
     patchPluginXml {
+        sinceBuild '191'
+        // Esté atento a las nuevas actualizaciones de Branch number y cambia la siguiente línea
+        // https://jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html
+        untilBuild '202.*'
         changeNotes """ Read the README for changes https://github.com/cjamcu/getx-snippets-intelliJ"""
     }
 }
