@@ -47,7 +47,7 @@ intellij {
         sinceBuild '191'
         // Esté atento a las nuevas actualizaciones de Branch number y cambia la siguiente línea
         // https://jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html
-        untilBuild '202.*'
+        untilBuild '203.*'
         changeNotes """ Read the README for changes https://github.com/cjamcu/getx-snippets-intelliJ"""
     }
 }
